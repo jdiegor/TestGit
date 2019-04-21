@@ -1,0 +1,39 @@
+VER EN YOUTUBE:
+---------------
+https://www.youtube.com/watch?v=HiXLkL42tMU
+
+
+Working DIrectory:  Es donde se trabaja con los archivos
+Staging Area:       Un área local propia antes de llevar los cambios al repositorio formal.
+Repository:         Reposistorio real compartido con otros usuarios
+
+Para inicializar un proyecto en Git, dentro de la carpeta raíz:
+    $ git init
+Para ver el estado de los archivos dentro del proyecto que faltan chequear:
+    $ git status
+Para adicionar un  archivo al proyecto git:
+    $ git add namefile.js
+Para adicionar todos los archivos pendientes  al proyecto git:
+    $ git add .
+Para subir un cambio al working folder
+    $ git commit  Digite “i”  Digite el texto comentario  ESC  :wq
+Para subir un cambio sin editor de comentarios
+    $ git commit -m "Commit de Componentes en un n uevo Branch"
+Para deschequear un archivo chequeado
+    $ git reset HEAD filename.js
+Para ver el histórico de cambios
+    $ git log
+Para comparar diferencias local vs la ultima
+    $ git  diff filenmae.js
+Para volver a tomar la ultima versión  de un archivo que cambie (no debe estar chequeado)
+    $ git checkout filename.js 
+A partir del estado actual del proyecto crear una rama nueva  (por defecto inicia en la master)
+    $ git branch MyBranchName
+Para visualizar que Branchs tiene el proyecto:
+    $ git branch
+Para acceder a un Branch espcifico
+    $ git checkout MyBranchName
+
+
+
+
