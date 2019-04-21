@@ -33,6 +33,8 @@ Para visualizar que Branchs tiene el proyecto:
     $ git branch
 Para acceder a un Branch espcifico
     $ git checkout MyBranchName
+Como enviar cambios al repositorio (desde el branch master, previamente habiendo definido el origin)
+    $ git push -u origin master
 
 
 
