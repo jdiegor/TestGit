@@ -68,3 +68,12 @@ Para subir la definciòn del Tag al repositorio:
     $ git push origin v1.0
 Para subir todas las definiciones de Tags al repositorio:
     $ git push origin --tags
+
+DESCARGANDO CAMBIOS DESDE EL REPOSITORIO
+----------------------------------------
+Listar las ramas ocultas locales de Git:
+    $ git branch -a 
+Descargar los fuentes desde el Repositorio a la rama oculta local de Git:
+    $ git fecth origin
+Hacer la fusión desde la rama oculta al Branch que se requiere:
+    $git merge origin/BranchName
