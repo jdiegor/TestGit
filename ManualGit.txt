@@ -33,9 +33,9 @@ Para visualizar que Branchs tiene el proyecto:
     $ git branch
 Para acceder a un Branch espcifico
     $ git checkout MyBranchName
+
+git remote add origin desarrollocol@vs-ssh.visualstudio.com:v3/desarrollocol/TestGit/TestGit
+git push -u origin --all
+
 Como enviar cambios al repositorio (desde el branch master, previamente habiendo definido el origin)
     $ git push -u origin master
-
-
-
-
