@@ -34,8 +34,24 @@ Para visualizar que Branchs tiene el proyecto:
 Para acceder a un Branch espcifico
     $ git checkout MyBranchName
 
-git remote add origin desarrollocol@vs-ssh.visualstudio.com:v3/desarrollocol/TestGit/TestGit
-git push -u origin --all
-
+CONECTARSE AL REPOSITORIO REMOTO
+---------------------------------
+Conectarse al repositorio
+    $ git remote add origin URL_Repositorio_GIT
+Actualizar todos los cambios desde el Staging Area al Repository:
+    $ git push -u origin --all
 Como enviar cambios al repositorio (desde el branch master, previamente habiendo definido el origin)
     $ git push -u origin master
+Como desconectarse del repositorio
+    $ git remote rm origin
+
+DEVOLVERSE Y DESTRUIR CAMBIOS
+-----------------------------
+Devolverse a la versiòn de un commit especifico: (Primero dbe hacer git log para obtener el còdigo Sha)
+    $ git checkout c57f0d4dbde9ccab51f07538f8db3ba10ab4d759
+Devolverse a la ùltima versiòn de un Branch:
+    $ git checkout BranchName
+Destruir un cambio solo en el Staging Area y el Repositorio:
+    $ git reset --soft c57f0d4dbde9ccab51f07538f8db3ba10ab4d759
+Destruir un cambio tanto en el Working, el Staging Area y el Repositorio:
+    $ git reset --hard c57f0d4dbde9ccab51f07538f8db3ba10ab4d759
