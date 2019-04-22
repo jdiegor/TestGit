@@ -64,5 +64,7 @@ Asignarle un TAG (ligero) al ùltimo Commmit realizado:
     $ git tag -a v1.0
 Asignarle un TAG a un Commmit especifico:  (Primero dbe hacer git log para obtener el còdigo Sha)
     $ git tag -a v1.0 -m "Versiòn 1.0 frl Proyecto TestGIT" c57f0d4dbde9ccab51f07538f8db3ba10ab4d759
-Para subir la versiòn al repositorio:
+Para subir la definciòn del Tag al repositorio:
     $ git push origin v1.0
+Para subir todas las definiciones de Tags al repositorio:
+    $ git push origin --tags
